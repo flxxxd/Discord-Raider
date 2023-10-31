@@ -38,6 +38,11 @@ The Discord Raider Application comes with the following features:
 
 - **Token Online Status Management:** Manage the online status of tokens.
 
+## Requirements
+- Visual Studio 2022
+
+
+
 ## How to Use
 
 1. **Installation:** Clone the project to your computer or download the ZIP file. Then, Open the Project and Compile it.
@@ -46,9 +51,10 @@ The Discord Raider Application comes with the following features:
 
 3. **Run the Application:** After running the application, add the tokens you saved in a specific .txt file to the application. Enjoy!
 
-## Media 
+## Overview & Build 
 
 
+- Quality 😭
 
 https://github.com/MuckPro/REDME/assets/138373919/e0458ca3-24ea-47e7-9662-425201079211
 

